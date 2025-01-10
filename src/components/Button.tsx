@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
 
-export default function Button() {
-  return (
-    <div>Button</div>
-  )
+type ButtonProps = {
+    children: React.ReactNode;
+    setCount: React.Dispatch<React.SetStateAction<number>>;
+};
+
+export default function Button({ children, setCount }: ButtonProps) {
+  return <button className="">{children}</button>;
 }
